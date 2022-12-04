@@ -20,6 +20,12 @@
         background-size: contain;
     }
 
+    @include tablet{
+        padding: $l-pad 1rem 15rem 1rem;
+        background-size: auto;
+
+    }
+
     img{
         width: 100px;
 
@@ -73,6 +79,10 @@
             @include mobile{
                 width: 100%;
             }
+
+            @include tablet{
+                width: 200px;
+            }
         }
 
         button{
@@ -80,6 +90,10 @@
 
             @include mobile{
                 padding: $xs-pad;
+            }
+
+            @include tablet{
+                padding: $xs-pad $s-pad;
             }
         }
     }

@@ -12,7 +12,11 @@ header{
         background-position-x: left, right, center;
         background-size: 100px;
         height: 50vh;
-
+    }
+    
+    @include tablet{
+        background-size: 150px;
+        background-position-x: 5%, 30%, right;
     }
 
     div{

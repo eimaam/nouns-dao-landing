@@ -1,6 +1,6 @@
 footer{
     background-color: $primary;
-    padding: $m-pad;
+    padding-block: $m-pad;
 
     .footer{
         margin: auto;
@@ -19,6 +19,12 @@ footer{
 
             img{
                 width: 80px;
+            }
+        }
+
+        @include tablet{
+            img{
+                width: 100px;
             }
         }
     }

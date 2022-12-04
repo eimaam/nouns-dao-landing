@@ -93,6 +93,11 @@ h1 {
     font-size: 1.35rem;
   }
 }
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 h2 {
   font-size: 1.5rem;
@@ -269,6 +274,12 @@ header {
     height: 50vh;
   }
 }
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+  header {
+    background-size: 150px;
+    background-position-x: 5%, 30%, right;
+  }
+}
 header div {
   width: 80%;
   margin: auto;
@@ -382,6 +393,12 @@ section .section .image--container img {
     background-size: contain;
   }
 }
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+  .referral {
+    padding: 2rem 1rem 15rem 1rem;
+    background-size: auto;
+  }
+}
 .referral img {
   width: 100px;
 }
@@ -439,6 +456,11 @@ section .section .image--container img {
     width: 100%;
   }
 }
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+  .referral form input {
+    width: 200px;
+  }
+}
 .referral form button {
   padding: 1rem 2rem;
 }
@@ -447,10 +469,15 @@ section .section .image--container img {
     padding: 0.5rem;
   }
 }
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+  .referral form button {
+    padding: 0.5rem 1rem;
+  }
+}
 
 footer {
   background-color: rgb(31, 79, 199);
-  padding: 1.5rem;
+  padding-block: 1.5rem;
 }
 footer .footer {
   margin: auto;
@@ -473,6 +500,11 @@ footer .footer * {
   }
   footer .footer img {
     width: 80px;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+  footer .footer img {
+    width: 100px;
   }
 }
 
