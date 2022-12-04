@@ -3,11 +3,35 @@ nav{
     @include flex-row;
     justify-content: space-around;
     padding-block: $s-pad;
-    
-    *{
 
+    *{
         color: $default;
+
+        @include mobile{
+            display: none;
+        }
     }
+
+    #toggler{
+        display: none;
+        cursor: pointer;
+
+        @include mobile{
+            display: block;
+            margin-left: auto;
+        }
+    }
+
+    @include mobile{
+        flex-direction: column;
+        padding-inline: $xs-pad;
+
+        img{
+            width: 60px;
+            display: none;
+        }
+    }
+    
 
     div{
         width: 100px;
@@ -20,6 +44,12 @@ nav{
 
     ul{
         @include flex-row;
+
+        @include mobile{
+            flex-direction: column;
+            display: none;
+
+        }
 
         .cta{
             border: solid $default;

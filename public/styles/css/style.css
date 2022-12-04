@@ -155,6 +155,7 @@ button:hover, input[type=submit]:hover {
 }
 
 img {
+  margin: auto;
   max-width: 100%;
   display: block;
   -o-object-fit: cover;
@@ -186,6 +187,31 @@ nav {
 nav * {
   color: #fff;
 }
+@media only screen and (max-width: 800px) {
+  nav * {
+    display: none;
+  }
+}
+nav #toggler {
+  display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  nav #toggler {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    padding-inline: 0.5rem;
+  }
+  nav img {
+    width: 60px;
+    display: none;
+  }
+}
 nav div {
   width: 100px;
 }
@@ -199,6 +225,12 @@ nav ul {
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
 }
 nav ul .cta {
   border: solid #fff;
