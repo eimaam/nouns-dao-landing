@@ -1,16 +1,29 @@
 section{
     margin-block: $xl-margin;
+
+    @include mobile{
+        margin-block: $l-margin;
+    }
     
     .section{
         margin: auto;
         @include flex-row;
         width: 80%;
+
+        @include mobile{
+            width: 90%;
+            flex-direction: column;
+        }
         
         .text--container{
         @include flex-col;
         justify-content: flex-end;
         align-items: flex-start;
         width: 40%;
+
+        @include mobile{
+            width: 100%;
+        }
         
         span{
             background-color: $secondary;
@@ -28,9 +41,17 @@ section{
         @include flex-col;
         width: 60%;
 
+        @include mobile{
+            width: 100%;
+        }
+
         img{
             margin: auto;
             width: 80%;
+
+            @include mobile{
+                width: 100%;
+            }
         }
     }
 }
