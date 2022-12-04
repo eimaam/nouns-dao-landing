@@ -6,7 +6,7 @@ export const ReferralPage = () => {
     <div id='referral'>
       <div className='referral'>
         <div className='flex-row'>
-          <img src={referImage} alt="" style={{width: "150px"}}/>
+          <img src={referImage} alt=""/>
           <h1>Referral Program</h1>
         </div>
         <form action="">

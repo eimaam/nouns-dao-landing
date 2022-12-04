@@ -13,15 +13,54 @@
     text-align: center;
     @include flex-col;
 
+    @include mobile{
+        width: 90%;
+        padding: $l-pad;
+        padding-bottom: $xl-pad;
+        background-size: contain;
+    }
+
+    img{
+        width: 100px;
+
+        @include mobile{
+            width: 50px;
+        }
+    }
+
 
     form{
         text-align: left;
 
-        .input1, .input2{
+        @include mobile{
+            width: 100%;
+        }
+        
+
+        .input1{
             @include grid(2, 1fr);
             align-items: center;
             gap: 0;
+
+
+            @include mobile{
+                width: 100%;
+                @include flex-col;
+                margin: 0;
+                gap: 0.2rem;
+
+                div{
+                    width: 100%;
+                    @include flex-col;
+                    gap: 0;
+                    margin-bottom: 0.4rem;
+                }
+            }
             
+        }
+
+        .input2{
+            @extend .input1;
         }
         
         input{
@@ -30,10 +69,18 @@
             padding: $s-pad;
             border: 1px solid $primary;
             border-radius: $m-border-radius;
+
+            @include mobile{
+                width: 100%;
+            }
         }
 
         button{
             padding: $s-pad $l-pad;
+
+            @include mobile{
+                padding: $xs-pad;
+            }
         }
     }
 }

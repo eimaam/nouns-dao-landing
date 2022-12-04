@@ -336,8 +336,29 @@ section .section .image--container img {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 800px) {
+  .referral {
+    width: 90%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    background-size: contain;
+  }
+}
+.referral img {
+  width: 100px;
+}
+@media only screen and (max-width: 800px) {
+  .referral img {
+    width: 50px;
+  }
+}
 .referral form {
   text-align: left;
+}
+@media only screen and (max-width: 800px) {
+  .referral form {
+    width: 100%;
+  }
 }
 .referral form .input1, .referral form .input2 {
   display: grid;
@@ -346,6 +367,28 @@ section .section .image--container img {
   align-items: center;
   gap: 0;
 }
+@media only screen and (max-width: 800px) {
+  .referral form .input1, .referral form .input2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 0.2rem;
+  }
+  .referral form .input1 div, .referral form .input2 div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 0.4rem;
+  }
+}
 .referral form input {
   width: 350px;
   margin: 0.5rem;
@@ -353,8 +396,18 @@ section .section .image--container img {
   border: 1px solid rgb(31, 79, 199);
   border-radius: 0.5rem;
 }
+@media only screen and (max-width: 800px) {
+  .referral form input {
+    width: 100%;
+  }
+}
 .referral form button {
   padding: 1rem 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .referral form button {
+    padding: 0.5rem;
+  }
 }
 
 footer {
