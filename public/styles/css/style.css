@@ -61,7 +61,7 @@
   font-display: swap;
   font-style: italic;
 }
-.flex-row, .icon--text {
+.flex-row {
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
