@@ -230,6 +230,12 @@ header {
   background-position: bottom;
   background-position-x: 5%, 20%, center;
 }
+@media only screen and (max-width: 800px) {
+  header {
+    background-position-x: left, right, center;
+    background-size: 100px;
+  }
+}
 header div {
   width: 80%;
   margin: auto;
@@ -244,6 +250,11 @@ header * {
 section {
   margin-block: 4.5rem;
 }
+@media only screen and (max-width: 800px) {
+  section {
+    margin-block: 2rem;
+  }
+}
 section .section {
   margin: auto;
   display: flex;
@@ -252,6 +263,12 @@ section .section {
   justify-content: center;
   align-items: center;
   width: 80%;
+}
+@media only screen and (max-width: 800px) {
+  section .section {
+    width: 90%;
+    flex-direction: column;
+  }
 }
 section .section .text--container {
   display: flex;
@@ -262,6 +279,11 @@ section .section .text--container {
   justify-content: flex-end;
   align-items: flex-start;
   width: 40%;
+}
+@media only screen and (max-width: 800px) {
+  section .section .text--container {
+    width: 100%;
+  }
 }
 section .section .text--container span {
   background-color: rgb(138, 5, 160);
@@ -280,9 +302,19 @@ section .section .image--container {
   align-items: center;
   width: 60%;
 }
+@media only screen and (max-width: 800px) {
+  section .section .image--container {
+    width: 100%;
+  }
+}
 section .section .image--container img {
   margin: auto;
   width: 80%;
+}
+@media only screen and (max-width: 800px) {
+  section .section .image--container img {
+    width: 100%;
+  }
 }
 
 .referral {
