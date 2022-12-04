@@ -11,5 +11,15 @@ footer{
         *{   
             color: $default;
         }
+
+        @include mobile{
+            width: 90%;
+            flex-direction: column;
+            text-align: center;
+
+            img{
+                width: 80px;
+            }
+        }
     }
 }

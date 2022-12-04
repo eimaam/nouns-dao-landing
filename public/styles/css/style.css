@@ -427,6 +427,16 @@ footer .footer {
 footer .footer * {
   color: #fff;
 }
+@media only screen and (max-width: 800px) {
+  footer .footer {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer img {
+    width: 80px;
+  }
+}
 
 * {
   margin: 0;
