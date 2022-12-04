@@ -220,7 +220,7 @@ nav #toggler {
 nav div {
   width: 100px;
 }
-nav button {
+nav button a {
   background-color: #fff;
   color: #15191c;
 }

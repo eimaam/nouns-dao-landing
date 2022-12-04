@@ -38,8 +38,10 @@ nav{
     }
 
     button{
-        background-color: $default;
-        color: $dark;
+        a{
+            background-color: $default;
+            color: $dark;
+        }
     }
 
     ul{

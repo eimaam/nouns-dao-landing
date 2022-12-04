@@ -26,11 +26,11 @@ export const Nav = () => {
             <img src={logo} alt="" id='logo'/>
         </div>
         <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <button>Contact us</button>
-            <li className='cta'>Signup | Login <img src={metamask} alt="metamask logo" /> <img src={twitter} alt="twitter logo" /> </li>
+            <li><a href='/'> Home</a></li>
+            <li><a href='/'>Services</a></li>
+            <li><a href='/'>About</a></li>
+            <button><a href='/'>Contact us</a></button>
+            <li className='cta'>Signup | Login <img src={metamask} alt="metamask logo" /> <img src={twitter} alt="twitter logo" /></li>
         </ul>
     </nav>
   )
