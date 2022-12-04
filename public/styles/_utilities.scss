@@ -82,6 +82,7 @@ button, input[type=submit]{
     &:hover{
         background-color: $secondary;
         border: 1px solid $primary;
+        color: $default;
     }
 
     @include mobile{

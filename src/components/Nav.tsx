@@ -15,7 +15,7 @@ export const Nav = () => {
             <li>Services</li>
             <li>About</li>
             <button>Contact us</button>
-            <li className='button'>Signup | Login <img src={metamask} alt="metamask logo" /> <img src={twitter} alt="twitter logo" /> </li>
+            <li className='cta'>Signup | Login <img src={metamask} alt="metamask logo" /> <img src={twitter} alt="twitter logo" /> </li>
         </ul>
     </nav>
   )

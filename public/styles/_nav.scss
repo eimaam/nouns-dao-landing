@@ -21,12 +21,13 @@ nav{
     ul{
         @include flex-row;
 
-        .button{
-            border: solid $secondary;
-            padding: 0.2rem 0.5rem;
+        .cta{
+            border: solid $default;
+            padding: 0.3rem 0.5rem;
             @include flex-row;
             gap: 0;
-            
+            cursor: pointer;
+
             img{
                 width: 20px;
                 margin-inline: 0.2rem;

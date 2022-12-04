@@ -145,6 +145,7 @@ button, input[type=submit] {
 button:hover, input[type=submit]:hover {
   background-color: rgb(138, 5, 160);
   border: 1px solid rgb(31, 79, 199);
+  color: #fff;
 }
 @media only screen and (max-width: 800px) {
   button, input[type=submit] {
@@ -199,17 +200,18 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
-nav ul .button {
-  border: solid rgb(138, 5, 160);
-  padding: 0.2rem 0.5rem;
+nav ul .cta {
+  border: solid #fff;
+  padding: 0.3rem 0.5rem;
   display: flex;
   flex-direction: row;
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
   gap: 0;
+  cursor: pointer;
 }
-nav ul .button img {
+nav ul .cta img {
   width: 20px;
   margin-inline: 0.2rem;
 }
@@ -262,7 +264,7 @@ section .section .text--container {
   width: 40%;
 }
 section .section .text--container span {
-  background-color: rgb(31, 79, 199);
+  background-color: rgb(138, 5, 160);
   padding-inline: 1rem;
   color: #fff;
   border-radius: 0.5rem;
@@ -313,7 +315,7 @@ section .section .image--container img {
   gap: 0;
 }
 .referral form input {
-  width: 300px;
+  width: 350px;
   margin: 0.5rem;
   padding: 1rem;
   border: 1px solid rgb(31, 79, 199);
