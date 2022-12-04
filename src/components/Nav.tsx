@@ -5,7 +5,6 @@ import twitter from "../Assets/Path 6.png"
 
 
 export const Nav = () => {
-  const [show, setShow] = useState<boolean>(false)
 
   const navToggler = () => {
     const logo:any = document.getElementById('logo')
