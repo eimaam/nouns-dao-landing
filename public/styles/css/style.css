@@ -1,0 +1,371 @@
+@font-face {
+  font-family: "Poppins-Variable";
+  src: url("./Fonts/Poppins-Variable.woff2") format("woff2"), url("./Fonts/Poppins-Variable.woff") format("woff"), url("./Fonts/Poppins-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("./Fonts/Poppins-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Extralight";
+  src: url("./Fonts/Poppins-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("./Fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./Fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./Fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./Fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Extrabold";
+  src: url("./Fonts/Poppins-Extrabold.woff2") format("woff2"), url("./Fonts/Poppins-Extrabold.woff") format("woff"), url("./Fonts/Poppins-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Black";
+  src: url("./Fonts/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+.flex-row, .icon--text {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.35rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 1.05rem;
+  }
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+@media only screen and (max-width: 800px) {
+  h3 {
+    font-size: 0.9rem;
+  }
+}
+
+h4 {
+  font-size: 1.01rem;
+  font-weight: 500;
+}
+@media only screen and (max-width: 800px) {
+  h4 {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+}
+
+p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+@media only screen and (max-width: 800px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+button, input[type=submit] {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: #15191c;
+  text-transform: capitalize;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+button:hover, input[type=submit]:hover {
+  background-color: rgb(138, 5, 160);
+  border: 1px solid rgb(31, 79, 199);
+}
+@media only screen and (max-width: 800px) {
+  button, input[type=submit] {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover; /*{ Read thissssssssssssssss} */
+}
+
+ul {
+  list-style-type: none;
+}
+ul li {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 800px) {
+  ul li {
+    font-size: 0.8rem;
+  }
+}
+
+nav {
+  background-color: rgb(31, 79, 199);
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-block: 1rem;
+}
+nav * {
+  color: #fff;
+}
+nav div {
+  width: 100px;
+}
+nav button {
+  background-color: #fff;
+  color: #15191c;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+nav ul .button {
+  border: solid rgb(138, 5, 160);
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+nav ul .button img {
+  width: 20px;
+  margin-inline: 0.2rem;
+}
+
+header {
+  background-color: rgb(31, 79, 199);
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("/noun-105.png"), url("/noun-205.png"), url("/noun-227.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: 5%, 20%, center;
+}
+header div {
+  width: 80%;
+  margin: auto;
+}
+header div h1 {
+  margin-bottom: 4.5rem;
+}
+header * {
+  color: #fff;
+}
+
+section {
+  margin-block: 4.5rem;
+}
+section .section {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+section .section .text--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 40%;
+}
+section .section .text--container span {
+  background-color: rgb(31, 79, 199);
+  padding-inline: 1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+section .section .text--container h2 {
+  text-transform: uppercase;
+}
+section .section .image--container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+section .section .image--container img {
+  margin: auto;
+  width: 80%;
+}
+
+.referral {
+  background-image: url("/Group277.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 80%;
+  margin: auto;
+  justify-content: flex-start;
+  border-radius: 1rem;
+  background-color: rgb(138, 5, 160);
+  color: #fff;
+  margin-block: 4.5rem;
+  padding: 2rem 6rem 15rem 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.referral form {
+  text-align: left;
+}
+.referral form .input1, .referral form .input2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  align-items: center;
+  gap: 0;
+}
+.referral form input {
+  width: 300px;
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 1px solid rgb(31, 79, 199);
+  border-radius: 0.5rem;
+}
+.referral form button {
+  padding: 1rem 2rem;
+}
+
+footer {
+  background-color: rgb(31, 79, 199);
+  padding: 1.5rem;
+}
+footer .footer {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer * {
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  transition: all 300ms;
+}
+
+html, body {
+  border: none;
+  line-height: 1.3;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  background-color: #f8f8f8;
+  font-family: "Poppins", sans-serif;
+}
+html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+  width: 0.5rem;
+}
+html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+  border: 1px solid rgb(138, 5, 160);
+  border-radius: 0.3rem;
+  background-color: rgb(31, 79, 199);
+}
+html ::-webkit-scrollbar-track, body ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #fff;
+}/*# sourceMappingURL=style.css.map */

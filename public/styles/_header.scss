@@ -1,0 +1,24 @@
+header{
+    background-color: $primary;
+    height: 65vh;
+    @include flex-row;
+    justify-content: flex-start;
+    background-image: url('/noun-105.png'), url('/noun-205.png'), url('/noun-227.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 5%, 20%, center;
+
+    div{
+        width: 80%;
+        margin: auto;
+
+        h1{
+            margin-bottom: $xl-margin;
+        }
+    }
+
+    *{
+        color: $default;
+    }
+
+}

@@ -1,0 +1,37 @@
+nav{
+    background-color: $primary;
+    @include flex-row;
+    justify-content: space-around;
+    padding-block: $s-pad;
+    
+    *{
+
+        color: $default;
+    }
+
+    div{
+        width: 100px;
+    }
+
+    button{
+        background-color: $default;
+        color: $dark;
+    }
+
+    ul{
+        @include flex-row;
+
+        .button{
+            border: solid $secondary;
+            padding: 0.2rem 0.5rem;
+            @include flex-row;
+            gap: 0;
+            
+            img{
+                width: 20px;
+                margin-inline: 0.2rem;
+            }
+        }
+
+    }
+}

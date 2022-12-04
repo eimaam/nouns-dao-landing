@@ -1,0 +1,15 @@
+footer{
+    background-color: $primary;
+    padding: $m-pad;
+
+    .footer{
+        margin: auto;
+        width: 80%;
+        @include flex-row;
+        justify-content: space-between;
+
+        *{   
+            color: $default;
+        }
+    }
+}

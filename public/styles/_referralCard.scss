@@ -1,0 +1,39 @@
+.referral{
+    background-image: url('/Group277.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: auto;
+    justify-content: flex-start;
+    border-radius: $l-border-radius;
+    background-color: $secondary;
+    color: $default;
+    margin-block: $xl-margin;
+    padding: $l-pad 6rem 15rem 6rem;
+    text-align: center;
+    @include flex-col;
+
+
+    form{
+        text-align: left;
+
+        .input1, .input2{
+            @include grid(2, 1fr);
+            align-items: center;
+            gap: 0;
+            
+        }
+        
+        input{
+            width: 300px;
+            margin: $s-margin;
+            padding: $s-pad;
+            border: 1px solid $primary;
+            border-radius: $m-border-radius;
+        }
+
+        button{
+            padding: $s-pad $l-pad;
+        }
+    }
+}
